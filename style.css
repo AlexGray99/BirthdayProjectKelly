@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    
+}
+.navbar {
+    padding: .8rems;
+}
+.navbar-nav li {
+    padding-right: 10px;
+}
+.nav-link {
+    font-size: 1.1em !important;
+}
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    <-----!transform: translateY(-50%);------>
+}
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+.carousel-caption h1{
+    font-size: 500%;
+  text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000
+}
+.carousel-caption h3{
+    font-size-adjust: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000
+    padding-bottom: 1rem;
+}
+.btn-primary {
+    background-color: #6648b1;
+    border: 1px solid #563d7c;
+}
+.btn-primary:hover {
+    background-color: #ffa800;
+    border: 1px solid #ff6c00;
+}
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0px;
+    background-color: #343a40 !important;
+    color: beige;
+}
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+  }
+@media (max-width: 768px) {
+  
+}
+@media (max-width: 576px) {
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+/*--- Pixel Kelly Centered style in "Contact Me"--*/
+
+.grid {
+  display: flex;                       /* establish flex container */
+  flex-wrap: wrap;                     /* enable flex items to wrap */
+  justify-content: space-around;
+  
+}
+.cell {
+  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
+  height: 90px;
+border-radius: 20px;
+  margin-bottom: 5px;
+  background-color: #999;
+}
+.cell:nth-child(3n) {
+  background-color: #4b4a4b;
+}
+.cellIcon {
+    display: block;
+    margin-bottom: auto;
+    margin-top: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*--- Pixel Kelly Centered style in "Contact Me"--*/
+
+.PixelKelly {
+    border: 1px solid #563d7c;
+    border-radius: 20px;
+    font-family: monospace;
+    background-color: darkslategray;
+}
+
+/*--- Stats Bar style in "Contact Me"--*/
+
+           {
+                margin: 0;
+                padding: 0;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+            body{
+                background: #b0bec5;
+            }
+            .main {
+                margin: 50px auto;
+                width: 85%;
+            }
+            .progressBar {
+                position: relative;
+                width: 100%;
+                height: 40px;
+                background: #29414a;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0 1px 2px #222;
+            }
+            .title{
+                position:absolute;
+                width:100px;
+                height: 40px;
+                padding-left: 0px;
+                float: left;
+                font-weight: bold;
+                color: #fff;
+                line-height: 2.5;
+                z-index: 10000;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;  
+                box-shadow: 2px 0 2px #333;
+                text-shadow: 1px 1px 1px #000;
+            }
+            .progress_value {
+            position: relative;
+            float: right;
+            padding-right: 15px;
+            line-height: 2.5;
+            font-weight: bold;
+            color: beige;
+            z-index: 10000;
+            }
+            .progress{
+                height: 40px;
+                position: absolute;
+                border-radius: 5px;
+                box-shadow: 2px 0 2px #555;
+            }
+            .heartColor{
+                background: #b71c1c;
+                font-family: monospace;
+                font-size: 15px;
+            }
+            .htmlColor{
+                background: #f78a36;
+                font-family: monospace;
+                font-size: 15px;
+            }
+            .cssColor{
+                background: #fdc24a;
+                font-family: monospace;
+                font-size: 15px;
+            }
+            .JavaColor{
+                background: #c78b5b;
+                font-family: monospace;
+                font-size: 15px;
+            }
+            .PHPColor{
+                background: violet;
+                font-family: monospace;
+                font-size: 15px;
+            }
+            .heart{
+                background: red;
+            }
+            .html{
+                background: yellow;
+            }
+            .css{
+                background: orange;
+            }
+            .Java{
+                background: blue;
+            }
+            .PHP{
+                background: orange;
+            }
+        
+
+/*-----Stat bars in 'Contact Me'--->
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
