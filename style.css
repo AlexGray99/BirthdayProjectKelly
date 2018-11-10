@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
-html, body bgcolor="420359"{
+html, body{
+    background-color:#333038;
     height: 100%;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    color: #222;
-    
+    color: #fcffd6;
 }
 .navbar {
     padding: .8rems;
